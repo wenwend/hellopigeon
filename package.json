@@ -1,0 +1,31 @@
+{
+  "name": "pigeon",
+  "version": "1.0.0",
+  "description": "create a restful heavon for pigeons. you should be able to track pigeons, register them, and view them.  ",
+  "main": "index.js",
+  "dependencies": {
+    "@angular/cli": "^6.2.3",
+    "angular": "^1.7.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "home"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenwend/hellopigeon.git"
+  },
+  "keywords": [
+    "restful",
+    "pigeon"
+  ],
+  "author": "rachel D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wenwend/hellopigeon/issues"
+  },
+  "homepage": "https://github.com/wenwend/hellopigeon#readme"
+}
