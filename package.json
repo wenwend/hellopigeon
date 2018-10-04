@@ -6,6 +6,7 @@
   "dependencies": {
     "@angular/cli": "^6.2.3",
     "angular": "^1.7.4",
+    "angular-in-memory-web-api": "^0.6.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3"

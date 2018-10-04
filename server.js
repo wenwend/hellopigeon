@@ -20,8 +20,9 @@ app.route('/api/pigeons').get((req, res) => {
 });
 //get one
 app.route('/api/pigeons/:name').get((req, res) => {
-	const requestedCatName=req.params['name'];
-	res.send({name:requestedCatName});
+	const requestedPigeonName=req.params['name'];
+	 
+	res.send({name:requestedPigeonName});
 });
 
 //post one
