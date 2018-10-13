@@ -25,18 +25,27 @@ var con=mysql.createConnection({
 
 con.connect(function(err){
 	if (err) throw err;
-	con.query("SELECT * FROM pigeons", function (err, result, fields) {
-	if (err) throw err;
-	console.log(result);
-  });
-	//console.log("You are connected with DB!");
+	//con.query("SELECT * FROM pigeons", function (err, result, fields) {
+	//if (err) throw err;
+	//console.log(result);
+  //});
+	console.log("You are connected with DB!");
 })
 
+//get all 
+var all_result;
+
+con.query("SELECT * FROM pigeons", function (err, result, fields) {
+	if (err) throw err;
+	//console.log(result);
+	all_result = result;
+});
 
 //get all 
 app.route('/api/pigeons').get((req, res) => {
+	
 	res.send({
-		Pigeons:[{name:"lily",age:4},{name:"lucy",age:5}]
+		all_result
 	});
 });
 //get one
