@@ -1,3 +1,15 @@
-<p>
-  pigeons works!
-</p>
+<h2> My Pigeons </h2>
+
+<div>
+	<label>Pigeon name:
+		<input #pigeonName />
+	</label>
+</div>
+
+<ul class="pigeons">
+	<li *ngFor='let p of pigeons'>
+		<a routerLink="/detail/{{p.id}}">
+			<span class="badge">{{p.id}}</span> {{p.name}}
+		</a>
+	</li>
+</ul>
